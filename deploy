@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+npm version patch --no-git-tag-version
+npm publish --access public --timeout=9999999 --loglevel verbose
+
+echo "Completed successfully"
